@@ -9,6 +9,7 @@ namespace MediatorTests
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }
