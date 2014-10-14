@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MediatorLib
 {
-    class Screen
+    public class Screen
     {
         private readonly ComputerSystem _mediator;
         public Screen(ComputerSystem mediator)

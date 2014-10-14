@@ -17,9 +17,18 @@ namespace MediatorLib
         {
             Debug.WriteLine("Computer is Switched off");
         }
-        public void KeyboardKeyPressed()
+        public bool KeyboardKeyPressed(string key)
         {
-            Debug.WriteLine("Keyboard key is Pressed!");
+            if (key.Length > 0)
+            {
+                Debug.WriteLine("Keyboard key is Pressed, which is " + key);
+                return true;
+            }
+            else
+            {
+                Debug.WriteLine("Keyboard key is not pressed!");
+                return false;
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MediatorLib
 {
-    class Keyboard
+    public class Keyboard
     {
         private readonly ComputerSystem _mediator;
         public Keyboard(ComputerSystem mediator)
@@ -25,9 +25,9 @@ namespace MediatorLib
             Debug.WriteLine("Keyboard is enabled");
         }
 
-        public void KeyPressed()
+        public bool KeyPressed(string key)
         {
-            _mediator.KeyboardKeyPressed();
+            return _mediator.KeyboardKeyPressed(key);
         }
 
         
