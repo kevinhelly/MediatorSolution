@@ -11,15 +11,15 @@ namespace MediatorLib
     {
         public void ComputerSwitchedOn()
         {
-
+            Debug.WriteLine("Computer is Switched on");
         }
         public void ComputerSwitchedOff()
         {
-
+            Debug.WriteLine("Computer is Switched off");
         }
         public void KeyboardKeyPressed()
         {
-
+            Debug.WriteLine("Keyboard key is Pressed!");
         }
     }
 }
