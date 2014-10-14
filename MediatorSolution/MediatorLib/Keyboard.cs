@@ -8,5 +8,27 @@ namespace MediatorLib
 {
     class Keyboard
     {
+        private readonly ComputerSystem _mediator;
+        public Keyboard(ComputerSystem mediator)
+        {
+            _mediator = mediator;
+        }
+
+        public void Enabled()
+        {
+            
+        }
+
+        public void Disabled()
+        {
+            
+        }
+
+        public void KeyPressed()
+        {
+            _mediator.KeyboardKeyPressed();
+        }
+
+        
     }
 }

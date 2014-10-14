@@ -8,5 +8,25 @@ namespace MediatorLib
 {
     class Screen
     {
+        private readonly ComputerSystem _mediator;
+        public Screen(ComputerSystem mediator)
+        {
+            _mediator = mediator;
+        }
+
+        public void TurnOn()
+        {
+            
+        }
+
+        public void TurnOff()
+        {
+            
+        }
+
+        public void DisplayCharacter()
+        {
+            
+        }
     }
 }

@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace MediatorLib
 {
-    class Computer
+    public class Computer
     {
+        private readonly ComputerSystem _mediator;
+
+        public Computer(ComputerSystem mediator)
+        {
+            _mediator = mediator;
+        }
+        public void SwitchOn()
+        {
+
+        }
+        public void SwitchOff()
+        {
+
+        }
     }
 }
